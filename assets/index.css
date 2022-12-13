@@ -1,0 +1,24 @@
+html{
+    margin: auto;
+    overflow: scroll;
+}
+
+body {
+    background-color: white;
+    overflow: hidden;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#mainPageText {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+#mainPageText p {
+    font-size: 18px;
+}
+
+#cardRow col-4 {
+    height: 500px;
+}
