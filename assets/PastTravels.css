@@ -1,0 +1,61 @@
+html {
+    margin: auto;
+    overflow: scroll;
+}
+
+body {
+    background-color: white;
+    overflow: hidden;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.navbar-brand {
+    color: white;
+}
+
+#headerText {
+    text-align: center;
+    padding-top: 20px;
+}
+
+#headerContent {
+    text-align: center;
+}
+
+#headerContent a {
+    margin-top: 20px;
+}
+
+#emptyContent {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#emptyContent h4 {
+    padding-bottom: 10px;
+}
+
+#cardContainer {
+    padding-top: 50px;
+}
+
+.row {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-body a {
+    background-color: lightseagreen;
+    border-color: black;
+}
+
+.card-body a:hover {
+    background-color: black;
+    color: white;
+    border-color: lightseagreen;
+}

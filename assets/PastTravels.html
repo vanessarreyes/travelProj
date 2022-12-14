@@ -4,15 +4,22 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>Travel Journal: Past Travels</title>
+        <title>Travel Journal</title>
         
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <!-- CSS -->
-        <link rel="stylesheet" type="text/css" href="./assets/index.css">
+        <link rel="stylesheet" type="text/css" href="./assets/NextTravelIdeas.css">
+
     </head>
 
     <body>
+        <script>
+            window.onload = function() {
+                LoadCards();
+            }
+        </script>
+
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="color:white;">
             <div class="collapse navbar-collapse" id="navbarNav">
                 <a class="navbar-brand">Travel Journal</a>
@@ -29,8 +36,15 @@
                 </ul>
             </div>
         </nav>
+        
+        <div id="headerContent">
+            <h1 id="headerText">My Past Travels</h1>
+        </div>
 
-        <h1>My Past Travels</h1>
-
+        <div class="container" id="cardContainer">
+            <!-- This gets filled with data from js -->
+        </div>
+        
+          <script src="./assets/PastTravels.js?newversion"></script>
     </body>
 </html>
