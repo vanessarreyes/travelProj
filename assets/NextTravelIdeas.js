@@ -51,7 +51,6 @@ function LoadCards() {
         var container = document.getElementById("cardContainer")
         try {
             const travelList = JSON.parse(text) // Try to parse the response as JSON
-            console.log(travelList)
             var header = document.getElementById('headerContent')
             var button = document.createElement('a')
             button.setAttribute('href', 'http://localhost:400/NextTravelForm')

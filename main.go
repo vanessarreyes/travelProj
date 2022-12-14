@@ -28,38 +28,14 @@ import (
 var port = 400
 var DB *sql.DB = nil
 
+// TODO: create different structs for future/past travel data
+// once tables begin to have different data
+
+// Struct needs to change to match database tables
 type NewTravelItem struct {
 	ID          int    `json:"id"`
 	Place       string `json:"place"`
 	Description string `json:"description"`
-}
-
-var nextTravels = []NewTravelItem{
-	NewTravelItem{
-		ID:          1,
-		Place:       "Europe",
-		Description: "I want to go here",
-	},
-	NewTravelItem{
-		ID:          2,
-		Place:       "Las Vegas",
-		Description: "I want to go here",
-	},
-	NewTravelItem{
-		ID:          3,
-		Place:       "Europe",
-		Description: "I want to go here",
-	},
-	NewTravelItem{
-		ID:          4,
-		Place:       "Las Vegas",
-		Description: "I want to go here",
-	},
-	NewTravelItem{
-		ID:          5,
-		Place:       "Europe",
-		Description: "I want to go here",
-	},
 }
 
 func ConnectToDB() *sql.DB {
@@ -145,7 +121,7 @@ func getNextTravelCards(w http.ResponseWriter, r *http.Request) {
 		futureTravels = append(futureTravels, travel)
 	}
 
-	// Convert the "nextTravels" variable to json
+	// Convert to json
 	travelListBytes, err := json.Marshal(futureTravels)
 
 	// If there is an error, print it to the console, and return a server
