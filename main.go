@@ -41,7 +41,7 @@ type NewTravelItem struct {
 func ConnectToDB() *sql.DB {
 	// The `sql.Open` function opens a new `*sql.DB` instance. We specify the driver name
 	// and the URI for our database. Here, we're using a Postgres URI
-	db, err := sql.Open("pgx", "user=postgres password=2400 host=localhost port=5432 dbname=travel-db sslmode=disable")
+	db, err := sql.Open("pgx", "user= password= host=localhost port=5432 dbname=travel-db sslmode=disable")
 	if err != nil {
 		log.Fatalf("could not connect to database: %v", err)
 	}
