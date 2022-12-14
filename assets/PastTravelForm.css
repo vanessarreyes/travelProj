@@ -1,0 +1,28 @@
+html {
+    margin: auto;
+    overflow: scroll;
+}
+
+body {
+    background-color: white;
+    overflow: hidden;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.navbar-brand {
+    color: white;
+}
+
+#headerText {
+    text-align: center;
+    padding-top: 20px;
+}
+
+#headerContent {
+    text-align: center;
+}
+
+#form {
+    margin-left: 50px;
+    margin-right: 50px;
+}

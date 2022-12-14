@@ -9,7 +9,7 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <!-- CSS -->
-        <link rel="stylesheet" type="text/css" href="./assets/index.css">
+        <link rel="stylesheet" type="text/css" href="./assets/NextTravelForm.css">
     </head>
 
     <body>
@@ -17,20 +17,39 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="color:white;">
             <div class="collapse navbar-collapse" id="navbarNav">
                 <a class="navbar-brand">Travel Journal</a>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://localhost:400">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://localhost:400/NextTravelIdeas">My Next Travel Ideas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://localhost:400/PastTravels">My Past Travels</a>
+                    </li>
+                </ul>
             </div>
         </nav>
 
+        <div id="headerContent">
+            <h1 id="headerText">Next Travel Form</h1>
+            <h4>Please enter the details of your future travel here and hit submit.</h4>
+        </div>
+
         <!--
             This section contains the form, that will be used to hit the
-            `POST /bird` API that we will build in the next section
+            `POST /SubmitNewTravelIdea` API that we will build in the next section
         -->
-        <form action="/SubmitNewTravelIdea" method="post">
-            Place:
-            <input type="text" name="place">
-            <br/> Description:
-            <input type="text" name="description">
-            <br/>
-            <input type="submit" value="Submit">
+        <form action="/SubmitNewTravelIdea" method="post" id="form">
+            <div class="form-group">
+                <label for="travelPlace">Place</label>
+                <input name="place" class="form-control" id="TravelPlaceText" placeholder="Enter Travel Place" maxlength="200" required>
+            </div>
+            <div class="form-group">
+                <label for="travelDescription">Description</label>
+                <textarea name="description" class="form-control" id="travelDescription" rows="3" maxlength="1000" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark">Submit</button>
         </form>
 
         <!-- Optional JavaScript -->
