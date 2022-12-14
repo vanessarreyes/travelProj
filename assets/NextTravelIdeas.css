@@ -13,14 +13,36 @@ body {
     color: white;
 }
 
-#mainPageText {
+#headerText {
+    text-align: center;
     padding-top: 20px;
-    padding-bottom: 20px;
+}
+
+#headerContent {
     text-align: center;
 }
 
-#mainPageText p {
-    font-size: 18px;
+#headerContent a {
+    margin-top: 20px;
+}
+
+#emptyContent {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#emptyContent h4 {
+    padding-bottom: 10px;
+}
+
+#cardContainer {
+    padding-top: 50px;
+}
+
+.row {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .card-body {
